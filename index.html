@@ -5,65 +5,90 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="Это мой сайт резюме">
     <meta name="keywords" content="resume">
+    <link rel="stylesheet" href="styleresume.css">
     <title>My_resume</title>
 </head>
 <body>
-    <img src="fhoto.jpg" alt="фото профиля" width="200">
-    <h1>Галина Сорокина</h1>
-    <p>Я инженер-конструктор <strong>КБ Салют ГКНПЦ им Хруничева</strong>. Хочу поменять профессию и стать <strong>Frontend-разработчиком</strong>. Прошла курс "Тестировщик цифровых продуктов", марафон по изучению JavaScript.</p>
-    <p><em>Я увлекаюсь плаванием и спортивным ориентированием. Изучаю программирование. Люблю учиться новому и расширять свой кругозор</em>.</p>
-    <h4>Список социальных сетей</h4>
-    <a href="https://t.me/by_sorokina_galina" target="_blank">Telegram</a>
-    |
-    <a href="https://www.instagram.com/galina_magpie/" target="_blank">Instagram</a>
-    <h2>Мои хобби</h2>
-    <ul>
-        <li>Спортивное ориентирование</li>
-        <li>Изучение языков</li>
-    </ul>
-    <h2>Опыт работы</h2>
-    <table>
-        <thead>
-            <tr>
-                <th>Название</th>
-                <th>Должность</th>
-                <th>Год</th>
-            </tr>
-        </thead>
-        <tbody>
-            <tr>
-                <td>НИИ ЦКМ</td>
-                <td>Техник</td>
-                <td>2012</td>
-            </tr>
-            <tr>
-                <td>ГНПЦ ИМБП РАН</td>
-                <td>Лаборант</td>
-                <td>2013</td>
-            </tr>
-            <tr>
-                <td>ГКНПЦ им. М.В. Хруничева</td>
-                <td>Инженер-конструктор</td>
-                <td>2014-н.в.</td>
-            </tr>
-        </tbody>
-    </table>
-    <h2>Связаться со мной</h2>
-    <form>
-        <div>
-            <label for="name">Ваше имя</label>
-            <input type="text" id="name" placeholder="Введите имя">
+    <div class="navbar">
+        <ul>
+            <li><a href="#">Мои хобби</a></li>
+            <li><a href="#">Опыт работы</a></li>
+            <li><a href="#">Связаться со мной</a></li>
+        </ul>          
+    </div>
+    <div class="container">
+        <div class="info">   
+            <img src="fhoto.jpg" alt="фото профиля" class="ava">
+        <div class="info-text">
+            <h1>Галина Сорокина</h1>
+                <p>Я инженер-конструктор <strong>КБ Салют ГКНПЦ им Хруничева</strong>. Хочу поменять профессию и стать <strong>Frontend-разработчиком</strong>. Прошла курс "Тестировщик цифровых продуктов", марафон по изучению JavaScript.</p>
+                <p><em>Я увлекаюсь плаванием и спортивным ориентированием. Изучаю программирование. Люблю учиться новому и расширять свой кругозор</em>.</p>
+            <h4>Список социальных сетей</h4>
+                <a href="https://t.me/by_sorokina_galina" target="_blank">Telegram</a>
+                |
+                <a href="https://www.instagram.com/galina_magpie/" target="_blank">Instagram</a>
         </div>
-        <div>
-            <label for="email">Ваш email</label>
-            <input type="email" id="email" placeholder="Введите email">
         </div>
-        <div>
-            <label for="message">Ваше сообщение</label>
-            <br>
-            <textarea id="message" cols="20" rows="5" placeholder="Введите сообщение..."></textarea>
+        <br>
+        <div class="card bg-1">  
+            <h2>Мои хобби</h2>
+                    <li>Спортивное ориентирование</li>
+                    <li>Изучение языков</li>
+                </ul>
+        </div> 
+        <br> 
+        <div class="card bg-2">
+            <h2>Опыт работы</h2>
+                <table class="table">
+                    <!-- <thead>
+                        <tr>
+                            <th>Название</th>
+                            <th>Должность</th>
+                            <th>Год</th>
+                        </tr>
+                    </thead> -->
+                    <tbody>
+                        <tr>
+                            <td>НИИ ЦКМ</td>
+                            <td>Техник</td>
+                            <td>2012</td>
+                        </tr>
+                        <tr>
+                            <td>ГНПЦ ИМБП РАН</td>
+                            <td>Лаборант</td>
+                            <td>2013</td>
+                        </tr>
+                        <tr>
+                            <td>ГКНПЦ им. М.В. Хруничева</td>
+                            <td>Инженер-конструктор</td>
+                            <td>2014-н.в.</td>
+                        </tr>
+                    </tbody>
+                </table>
         </div>
-        <input type="button" value="Отправить!">
-    </form>
-    </html>
-    
+        
+        <form action="/" class="form">
+            <h2>Связаться со мной</h2>
+            <div class="form-row"></div>
+                <div class="form-group">
+                    <label for="name">Ваше имя</label>
+                    <input type="text" id="name" placeholder="Введите имя">
+                </div>
+                <div class="form-group">
+                    <label for="email">Ваш email</label>
+                    <input type="email" id="email" placeholder="Введите email">
+                </div>   
+
+                <div class="form-group">
+                    <label for="message">Ваше сообщение</label>
+                    <br>
+        
+                    <textarea id="message" cols="20" rows="5" placeholder="Введите сообщение..."></textarea>
+                </div>
+             
+                <input class="btn" type="button" value="Отправить!">
+            </div>
+        </form>
+    </div>
+</body> 
+</html>  
